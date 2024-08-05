@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root{
+    --primary-color:#aa6ae6;
+    --primary-color-dark:#c3769f;
+    --secondary-color:#1b259a;
+    --text-dark:#1f2937;
+    --text-light:#6b7280;
+    --extra-light:#faf5ff;
+    --max-width:1200px;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+  }
+.top{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #b5e8e1;
+    z-index:99;
+}
+.navcontent{
+    max-width: var(--max-width);
+    margin: auto;
+    padding:1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight:600;
+    color:var(--primary-color);
+    transition: 0.3s;
+}
+.logo a:hover {
+    color: var(--primary-color-dark);
+
+}
+
+nav .input{
+    display: none;
+}
+
+ul{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    list-style:none;
+    transition:left 0.3s;
+
+}
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight:600;
+    color:var(--text-dark);
+    /*transition:0.3s;*/
+}
+ul li a:hover{
+    border-top-color:var(--secondary-color);
+    border-bottom-color:var(--secondary-color);
+    color: var(--secondary-color)
+}
+.Box{
+    background-color: var(--extra-light);
+
+}
+.container{
+    min-height: 100vh;
+    max-width:var(--max-width);
+    margin:auto;
+    padding:1rem;
+    
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 320px;
+    
+}
+.subtitle{
+    letter-spacing: 2px;
+    color:var(--text-light);
+    font-weight: 800;
+    margin-bottom:.5rem;
+
+
+}
+.title{
+    font-size: 2.3rem;
+    font-weight:100;
+    line-height:3rem;
+    color:var(--text-dark);
+    margin-bottom:1rem;
+}
+.title span{
+    font-weight:300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.description{
+    line-height: 1.5rem;
+    color:var(--text-light);
+    margin-bottom:2rem;
+}
+.action_btns{
+    display:flex;
+    gap:1rem;
+}
+.action_btns button{
+    font-size: 1rem;
+    font-weight:600 ;
+    letter-spacing:2px;  
+    padding:1rem 2rem;
+    outline:none;
+    border:2px solid var(--primary-color);
+    cursor:pointer;
+}
+
+.hireme{
+    background-color: var(--primary-color);
+    color:#ffffff
+}
+.hireme:hover{
+    background-color: var(--primary-color-dark);
+}
+.portfolio{
+    color:var(--primary-color);
+}
+.portfolio:hover{
+    background-color: var(--primary-color-dark);
+    color:#ffffff
+}
+
+
+img{
+    display: grid;
+    place-items:center;  
+    width:500px;
+    border-radius:50%;
+    position:absolute;
+    right:100px;
+    bottom:140px;
+    box-shadow:2px 2px 2px #3d1e5d;
+}
+.text{
+    position: absolute;
+    bottom:80px;
+    left:800px;
+    text-align: center;
+}
+.connect{
+    display: flex;
+    position: absolute;
+    bottom:40px;
+    left:830px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+    text-decoration: none;
+    align-items: center;
+}
